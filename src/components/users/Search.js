@@ -26,8 +26,8 @@ class Search extends Component {
   // This is a method
   onChange = e => this.setState({ [e.target.name]: e.target.value });
   render() {
-    // Destructuring
-    const { clearUsers, showClear } = this.state;
+    // Destructuring - fix later
+    // const { clearUsers, showClear } = this.state;
     return (
       <div>
         <form onSubmit={this.onSubmit} className="form">
@@ -45,8 +45,11 @@ class Search extends Component {
             className="btn btn-dark btn-block"
           />
         </form>
-        {showClear && (
-          <button className="btn btn-light btn-block" onClick={clearUsers}>
+        {this.props.showClear && (
+          <button
+            className="btn btn-light btn-block"
+            onClick={this.props.clearUsers}
+          >
             Clear
           </button>
         )}

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 
 /* Global Styles */
 :root {
@@ -7,6 +7,7 @@
   --light-color: #f4f4f4;
   --danger-color: #dc3545;
   --success-color: #28a745;
+  --info-color: #0099cc;
 }
 
 * {
@@ -16,7 +17,7 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1rem;
   line-height: 1.6;
   background-color: #fff;
@@ -269,6 +270,11 @@ img {
   color: #fff;
 }
 
+.badge-info {
+  background: var(--info-color);
+  color: #fff;
+}
+
 .btn-danger,
 .bg-danger,
 .badge-danger,
@@ -318,10 +324,10 @@ input {
   color: #888;
 }
 
-input[type='text'],
-input[type='email'],
-input[type='password'],
-input[type='date'],
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
 select,
 textarea {
   display: block;
@@ -331,7 +337,7 @@ textarea {
   border: 1px solid #ccc;
 }
 
-input[type='submit'],
+input[type="submit"],
 button {
   font: inherit;
 }
